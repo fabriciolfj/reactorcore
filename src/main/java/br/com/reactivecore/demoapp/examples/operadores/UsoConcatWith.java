@@ -25,5 +25,6 @@ public class UsoConcatWith {
         fibonacciGenerator.skip(1).take(10)
                 .concatWith(Flux.just(new Long[]{-1L,-2L,-3L}))
                 .subscribe(System.out::println);
+
     }
 }
